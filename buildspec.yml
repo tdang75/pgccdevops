@@ -13,6 +13,9 @@ phases:
       - ng build -c production
 artifacts:
   files:
-    - 'dist/my-angular-project/**/*'
-    - appspec.yml
-    - 'deploy-scripts/**/*'
+    base-directory: dist/my-angular-project
+    files:
+      - '**/*'
+    #    - 'dist/my-angular-project/**/*'
+    #- appspec.yml
+    #- 'deploy-scripts/**/*'
